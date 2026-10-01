@@ -1,0 +1,1 @@
+var e=1100;function t(){return typeof document>`u`?!1:document.documentElement.dataset.motion===`reduce`}export{t as n,e as t};

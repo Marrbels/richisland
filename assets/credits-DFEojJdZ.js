@@ -1,0 +1,2 @@
+import{n as e}from"./manifest-AokKurAi.js";var t=e(`/assets/audio/CREDITS.md`),n=/^- "(.+)" by (.+?) — (\S+) — licensed under \[(.+?)\]\((\S+?)\)/;function r(e){let t=e.split(/^## /m).find(e=>e.startsWith(`Attribution`));return t?t.split(`
+`).flatMap(e=>{let t=n.exec(e);if(!t)return[];let[,r,i,a,o,s]=t;return[{title:r,author:i,url:a,license:o,licenseUrl:s}]}):[]}export{r as n,t};

@@ -1,0 +1,13 @@
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{n as t,t as n}from"./jsx-runtime-BNakU3Ej.js";import{a as r,i,n as a,r as o,t as s}from"./stages-PuaSjb5p.js";import c from"./StartersDemo-BVzGDgOL.js";var l=e(t(),1),u=[{id:`sunset`,...o,score:null,Stage:a},{id:`chart`,...r,score:null,Stage:i}],d=n(),f=new URLSearchParams(location.search);function p(){let[e,t]=(0,l.useState)(()=>Math.max(0,u.findIndex(e=>e.id===f.get(`v`)))),[n,r]=(0,l.useState)(!0),i=u[e]??u[0];return i&&(s.cannon=i.Stage),(0,l.useEffect)(()=>{let e=e=>{let n=u.length;e.key===`ArrowRight`&&t(e=>(e+1)%n),e.key===`ArrowLeft`&&t(e=>(e+n-1)%n)};return window.addEventListener(`keydown`,e),()=>window.removeEventListener(`keydown`,e)},[]),(0,d.jsxs)(d.Fragment,{children:[(0,d.jsx)(c,{},i?.id),(0,d.jsxs)(`aside`,{className:`cannon-audition`,"data-open":n,children:[(0,d.jsx)(`button`,{type:`button`,className:`cannon-audition-toggle`,onClick:()=>r(e=>!e),children:n?`Hide`:`Cannon looks`}),n&&(0,d.jsxs)(`ol`,{children:[u.map((n,r)=>(0,d.jsx)(`li`,{children:(0,d.jsxs)(`button`,{type:`button`,"aria-pressed":r===e,onClick:()=>t(r),children:[(0,d.jsxs)(`strong`,{children:[`${r+1}. `,n.name,n.score!==null&&(0,d.jsxs)(`span`,{children:[` · `,n.score.toFixed(1)]})]}),(0,d.jsx)(`span`,{children:n.pitch}),r===e&&n.why&&(0,d.jsx)(`em`,{children:n.why})]})},n.id)),(0,d.jsx)(`li`,{className:`cannon-audition-keys`,children:`← → switch · R replay`})]})]}),(0,d.jsx)(`style`,{children:m})]})}var m=`
+.cannon-audition { position: fixed; left: 12px; bottom: 12px; z-index: 9999; width: min(340px, calc(100vw - 24px));
+  font: 13px/1.35 system-ui, sans-serif; color: #f4e7c9; }
+.cannon-audition ol { list-style: none; margin: 6px 0 0; padding: 8px; display: grid; gap: 6px;
+  background: rgb(8 29 39 / 92%); border: 1px solid #b08d4f; border-radius: 10px; }
+.cannon-audition li > button { display: grid; gap: 2px; width: 100%; text-align: left; cursor: pointer;
+  background: transparent; color: inherit; border: 1px solid rgb(176 141 79 / 35%); border-radius: 8px; padding: 6px 8px; }
+.cannon-audition li > button[aria-pressed='true'] { background: #f4e7c9; color: #0f2c3a; border-color: #f0b429; }
+.cannon-audition li em { font-style: normal; opacity: .8; }
+.cannon-audition-toggle { background: #f0b429; color: #2e1b0d; border: 0; border-radius: 999px; padding: 4px 12px;
+  cursor: pointer; font-weight: 700; }
+.cannon-audition-keys { opacity: .6; font-size: 12px; padding: 0 4px; }
+`;export{p as default};
